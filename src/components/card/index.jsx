@@ -2,6 +2,10 @@ import React from "react";
 import { formatFileSize } from "../../utils/sizeFormatter";
 
 function Card({ file, handleRemove, data }) {
+  const downloadFile = () => {
+    const link = data.data;
+    window.open(link, "_blank");
+  };
   return (
     <div key={file.lastModified} className="card card-side bg-white border">
       <button
@@ -27,7 +31,7 @@ function Card({ file, handleRemove, data }) {
         <div className="card-actions justify-end">
           <button
             onClick={() => {
-              "";
+              downloadFile();
             }}
             className="btn bg-primary text-white hover:bg-secondary"
           >

@@ -11,7 +11,7 @@ export const FileProvider = ({ children }) => {
     setFile([...file, { file: newFile, response: responseData }]);
   };
   const removeFile = (name) => {
-    setFile(file.filter((f) => f.name !== name));
+    setFile(file.filter((f) => f.file.name !== name));
     toast.error("File removed!");
   };
   return (

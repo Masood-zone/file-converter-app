@@ -23,13 +23,14 @@ function Modal() {
     setLoading(true);
     try {
       const response = await axios.post(
-        `${BASE_URL}/convert/word-file/pdf-file`,
+        `${BASE_URL}/convert/word-file/pdf-url`,
         formData,
         {
           headers: {
             "apy-token": API_KEY,
             "Content-Type": "multipart/form-data",
           },
+          data: "[form]",
         }
       );
       addFile(currentFile, response.data);
