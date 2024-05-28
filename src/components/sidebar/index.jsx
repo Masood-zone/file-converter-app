@@ -32,7 +32,7 @@ function Sidebar() {
         {/* Sidebar content here */}
         <ul className="menu p-4 pl-10 w-80 min-h-full border-r text-base-content max-md:bg-base-200 flex flex-col items-start justify-start gap-10">
           {/* Main Logo */}
-          <div className="w-auto p-3 bg-primary-500 rounded-2xl ml-2">
+          <div className="w-auto p-3 bg-primary rounded-2xl ml-2">
             <Link to="/">
               <Zap size={26} className="h-auto mx-auto text-white" />
             </Link>
@@ -43,8 +43,8 @@ function Sidebar() {
                 to="/"
                 className={
                   location.pathname === "/"
-                    ? "text-text-900 font-medium"
-                    : "text-background-300 font-medium"
+                    ? "text-text/85 font-medium"
+                    : "text-accent font-medium"
                 }
               >
                 Home
@@ -55,8 +55,8 @@ function Sidebar() {
                 to="/about"
                 className={
                   location.pathname === "/about"
-                    ? "text-text-900 font-medium"
-                    : "text-background-300 font-medium"
+                    ? "text-text/85 font-medium"
+                    : "text-accent font-medium"
                 }
               >
                 About Us
@@ -65,22 +65,19 @@ function Sidebar() {
           </div>
           {/* Theme section */}
           <div className="ml-3">
-            <label className="cursor-pointer grid grid-cols-4 place-items-center w-20 h-10 rounded-full bg-slate-500">
+            <label className="cursor-pointer grid place-items-center">
               <input
                 type="checkbox"
                 value="dark"
-                className="toggle theme-controller bg-base-200 row-start-1 col-start-1 col-span-4 w-full h-full"
+                className="toggle toggle-lg theme-controller bg-gray-200 row-start-1 col-start-1 col-span-2 rounded-full"
               />
-              <img
-                src={sun}
-                alt="Sun Icon"
-                className="col-start-1 row-start-1 stroke-base-100 fill-base-100"
-              />
-              <img
-                src={moon}
-                alt="Moon Icon"
-                className="col-start-2 row-start-1 stroke-base-100 fill-base-100"
-              />
+
+              <div className="col-start-1 row-start-1">
+                <img src={sun} alt="Sun Icon" className="" />
+              </div>
+              <div className="col-start-2 row-start-1 ">
+                <img src={moon} alt="Moon Icon" className="" />
+              </div>
             </label>
           </div>
         </ul>
