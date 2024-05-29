@@ -24,11 +24,11 @@ function AboutUs() {
         </div>
         <div className="">
           <p className="py-5 text-lg">
-            I am a full-stack developer with a passion for creating web
-            applications. I have experience with a variety of technologies,
-            including React, Node.js, and MongoDB. I am always looking for new
-            challenges and opportunities to learn and grow as a developer. When
-            I'm not coding, you can find me hiking in the mountains or playing
+            I am an aspiring full-stack developer with a passion for creating
+            web applications. I have experience with a variety of technologies,
+            including React, JavaScript, HTML, and CSS. I am always looking for
+            new challenges and opportunities to learn and grow as a developer.
+            When I'm not coding, you can find me going for walks or playing
             video games. I love exploring new places and trying new things, and
             I bring that same sense of adventure to my work as a developer.
           </p>
