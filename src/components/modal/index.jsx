@@ -44,7 +44,7 @@ function Modal() {
   };
   return (
     <dialog id="my_modal_3" className="modal">
-      <div className="modal-box w-full h-auto">
+      <div className="modal-box w-full h-auto max-md:max-w-md max-lg:max-w-lg max-xl:max-w-xl max-sm:max-w-sm max-[399px]:w-[350px]">
         <h3 className="font-bold text-2xl">Upload file</h3>
         <p className="py-4">
           FireCracker let's you upload DOC, DOCX,and ODF documents into PDF

@@ -64,7 +64,7 @@ function Sidebar() {
             </li>
           </div>
           {/* Theme section */}
-          <div className="ml-3">
+          {/* <div className="ml-3">
             <label className="cursor-pointer grid place-items-center">
               <input
                 type="checkbox"
@@ -79,7 +79,7 @@ function Sidebar() {
                 <img src={moon} alt="Moon Icon" className="" />
               </div>
             </label>
-          </div>
+          </div> */}
         </ul>
       </div>
     </div>

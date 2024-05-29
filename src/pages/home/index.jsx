@@ -9,7 +9,7 @@ function Home() {
   const { file, removeFile } = useFileContext();
   console.log(file);
   return (
-    <section className="pt-3 flex flex-col gap-4 px-10">
+    <section className="pt-3 flex flex-col gap-4 px-10 max-md:px-2">
       <header className="flex items-center justify-start w-full pt-2">
         <div className="text-left flex-1">
           <h1 className="text-2xl text-black font-bold">Home</h1>
@@ -26,10 +26,10 @@ function Home() {
         </div>
         <Modal />
       </header>
-      <section className="p-5 mt-6 w-full flex flex-col gap-5">
+      <section className="mt-6 w-full flex flex-col gap-5">
         {/* Check if there are files */}
         {file.length === 0 ? (
-          <div>
+          <div className="w-full">
             <NoFilesNotice />
           </div>
         ) : (
