@@ -45,7 +45,7 @@ function AboutUs() {
       <div className="flex w-full my-auto justify-between flex-row-reverse p-5 max-md:flex-col max-md:gap-5 max-sm:bg-primary max-sm:rounded-lg">
         <div className="left-bottom-content">
           <p className="text-lg">
-            Frontend Developer -{" "}
+            FullStack Developer -{" "}
             <a
               className="link link-hover"
               href="https://github.com/masood-zone"
